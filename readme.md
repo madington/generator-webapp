@@ -1,4 +1,4 @@
-# Web app generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-webapp.svg?branch=master)](http://travis-ci.org/yeoman/generator-webapp)
+# Madington web app generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-webapp.svg?branch=master)](http://travis-ci.org/yeoman/generator-webapp)
 
 [Yeoman](http://yeoman.io) generator that scaffolds out a front-end web app.
 
@@ -16,14 +16,25 @@
 * Bootstrap for Sass (Optional)
 * Leaner Modernizr builds (Optional)
 
-For more information on what `generator-webapp` can do for you, take a look at the [Grunt tasks](https://github.com/yeoman/generator-webapp/blob/master/app/templates/_package.json) used in our `package.json`.
+For more information on what `generator-madington-webapp` can do for you, take a look at the [Grunt tasks](https://github.com/yeoman/generator-webapp/blob/master/app/templates/_package.json) used in our `package.json`.
 
 
 ## Getting Started
 
-- Install: `npm install -g generator-webapp`
-- Run: `yo webapp`
-- Run `grunt` for building and `grunt serve` for preview[*](#serve-note). `--allow-remote` option for remote access.
+Install yeoman:
+
+```sh
+$ npm install -g yo
+```
+
+generator-madington-webapp is not published as an NPM package, so you'll need to :
+```sh
+$ git clone https://github.com/madington/generator-webapp.git generator-madington-webapp
+$ cd generator-madington-webapp
+$ npm link
+```
+- Run: `yo madington-webapp`
+- Run `grunt build` for building and `grunt serve` for preview[*](#serve-note). `--allow-remote` option for remote access.
 
 
 #### Third-Party Dependencies

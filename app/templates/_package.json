@@ -1,6 +1,6 @@
 {
   "name": "<%= _.slugify(appname) %>",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -29,7 +29,9 @@
     "grunt-concurrent": "~0.5.0",
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.3.1",
-    "jshint-stylish": "~0.1.5"
+    "jshint-stylish": "~0.1.5",
+    "grunt-html-smoosher": "git://github.com/madington/grunt-html-smoosher.git",
+    "grunt-contrib-compress": "~0.5.2"
   },
   "engines": {
     "node": ">=0.10.0"

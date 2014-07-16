@@ -408,6 +408,28 @@ module.exports = function (grunt) {
       }
     },<% } %>
 
+    smoosher: {
+        options: {
+            js: false
+        },
+        build: {
+            files: {
+                '<%= yeoman.dist %>/index.html': '<%= yeoman.dist %>/index.html'
+            }
+        }
+    },
+    
+    compress: {
+        build: {
+            options: {
+                archive: '<%= yeoman.dist %>/dist.zip'
+            },
+            files: [
+                {expand: true, cwd: '<%= yeoman.dist %>/', src: ['images/*', 'index.html', 'scripts/*']}
+            ]
+        }
+    },
+    
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [<% if (includeSass) { %>
@@ -482,7 +504,9 @@ module.exports = function (grunt) {
     'modernizr',<% } %>
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'smoosher',
+    'compress'
   ]);
 
   grunt.registerTask('default', [
