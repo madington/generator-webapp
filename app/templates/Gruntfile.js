@@ -44,7 +44,6 @@ module.exports = function (grunt) {
       },<% } else { %>
       js: {
         files: ['<%%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['jshint'],
         options: {
           livereload: true
         }
@@ -414,7 +413,7 @@ module.exports = function (grunt) {
         },
         build: {
             files: {
-                '<%= yeoman.dist %>/index.html': '<%= yeoman.dist %>/index.html'
+                '<%%= config.dist %>/index.html': '<%%= config.dist %>/index.html'
             }
         }
     },
@@ -422,10 +421,10 @@ module.exports = function (grunt) {
     compress: {
         build: {
             options: {
-                archive: '<%= yeoman.dist %>/dist.zip'
+                archive: '<%%= config.dist %>/dist.zip'
             },
             files: [
-                {expand: true, cwd: '<%= yeoman.dist %>/', src: ['images/*', 'index.html', 'scripts/*']}
+                {expand: true, cwd: '<%%= config.dist %>/', src: ['images/*', 'index.html', 'scripts/*']}
             ]
         }
     },
