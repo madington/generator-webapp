@@ -33,6 +33,8 @@ $ git clone https://github.com/madington/generator-webapp.git generator-madingto
 $ cd generator-madington-webapp
 $ npm link
 ```
+You now have a local copy and linked to npm. Go to your working dir and run:
+
 - Run: `yo madington-webapp`
 - Run `grunt build` for building and `grunt serve` for preview[*](#serve-note). `--allow-remote` option for remote access.
 
