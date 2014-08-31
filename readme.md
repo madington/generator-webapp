@@ -64,6 +64,11 @@ The components are installed in the root of the project at `/bower_components`. 
 Note: `grunt server` was used for previewing in earlier versions of the project, and has since been deprecated in favor of `grunt serve`.
 
 
+## Docs
+
+We have [recipes](docs/recipes) for integrating other popular technologies like Compass.
+
+
 ## Options
 
 * `--skip-install`
