@@ -1,6 +1,6 @@
 {
   "name": "generator-madington-webapp",
-  "version": "0.5.0-1",
+  "version": "0.5.1-1",
   "description": "Scaffold out a front-end web app",
   "license": "BSD",
   "repository": "madington/generator-madington-webapp",
