@@ -1,17 +1,13 @@
 {
-  "name": "generator-madington-webapp",
-  "version": "0.5.1-1",
+  "name": "generator-webapp",
+  "version": "1.1.1",
   "description": "Scaffold out a front-end web app",
   "license": "BSD",
-  "repository": "madington/generator-madington-webapp",
-  "author": "The Yeoman Team",
+  "repository": "yeoman/generator-webapp",
+  "author": "Yeoman",
   "main": "app/index.js",
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=1.2.10"
-  },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec --timeout 3000"
   },
   "files": [
     "app"
@@ -27,17 +23,18 @@
     "grunt"
   ],
   "dependencies": {
-    "chalk": "^0.5.1",
-    "cheerio": "^0.17.0",
-    "yeoman-generator": "~0.17.3",
-    "yosay": "~1.0.0"
+    "chalk": "^1.0.0",
+    "generator-jasmine": "^0.2.0",
+    "generator-mocha": "^0.2.0",
+    "mkdirp": "^0.5.1",
+    "underscore.string": "^3.1.1",
+    "wiredep": "^2.2.2",
+    "yeoman-generator": "^0.20.1",
+    "yosay": "^1.0.4"
   },
   "devDependencies": {
+    "grunt-cli": "^0.1.13",
     "mocha": "*",
-    "underscore": "^1.6.0"
-  },
-  "peerDependencies": {
-    "yo": ">=1.2.0",
-    "generator-mocha": ">=0.1.0"
+    "yeoman-assert": "^2.0.0"
   }
 }
